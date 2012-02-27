@@ -1,3 +1,26 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+$radio: 4px;
+$select_size: 30px;
+
+.radio-toolbar{
+  margin: 0 auto 0 auto;
+  input[type="radio"]{
+    display:none
+  }
+  input[type="radio"]:checked + label{
+    background-color:#bbb;
+  }
+  label{
+    display:inline-block;
+    background-color:#eee;
+    padding:5px;
+    /*padding-top: $select_size - 10 ;*/
+    margin:3px;
+    text-align:center; vertical-align:middle;
+    line-height:100%;
+    width:$select_size; height:$select_size;
+    -webkit-border-radius:$radio; -moz-border-radius:$radio; border-radius:$radio;
+  }
+}

@@ -3,4 +3,5 @@ TestApp::Application.routes.draw do
   
   match "/about" => "pages#about"
   match "/contact" => "pages#contact"
+  match "/calcs" => "pages#calcs"
 end

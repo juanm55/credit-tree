@@ -1,7 +1,8 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.0'
-gem "mysql2", "~> 0.3.11"
+gem 'rails', '3.2.1'
+#gem "mysql2", "~> 0.3.11" # gordo es nina y n pudo con mysql
+gem 'sqlite3' #toco sqlite
 
 # Gems used only for assets and not required in production environments by default.
 group :assets do
