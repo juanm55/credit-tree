@@ -1,0 +1,38 @@
+
+<div class="row">
+  <div class="span7">
+    calcular para 
+    
+    <div class="row">
+      <div class="radio-toolbar">
+        <input type="radio" id="calcs_radioI" name="radios" value="all" checked>
+        <label for="calcs_radioI">I</label>
+        
+        <input type="radio" id="calcs_radioVP" name="radios"value="false">
+        <label for="calcs_radioVP">VP</label>
+
+        <input type="radio" id="calcs_radioi" name="radios" value="true">
+        <label for="calcs_radioi">i</label>
+        
+        <input type="radio" id="calcs_radion" name="radios" value="true">
+        <label for="calcs_radion">n</label>
+      </div>
+    </div>
+    
+    <div class="row">
+      <span id="field1_label" class="">VP</span>
+      <%= text_field_tag :field1, nil, :class => "positive" %><br/>
+      
+      <span id="field1_label" class="">i</span>
+      <%= text_field_tag :field2, nil, :class => "positive" %><br/>
+      
+      <span id="field1_label" class="">n</span>
+      <%= text_field_tag :field3, nil, :class => "positive" %><br/>
+      
+      <span class="">I</span>
+      <%= text_field_tag :result, nil, :disabled => true %>
+    </div>
+  </div>
+</div>
+
+
